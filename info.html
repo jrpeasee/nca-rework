@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,200,600,800' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+       <style type="text/css">
+    /* Custom Styles */
+
+    h2{
+      text-transform: uppercase;
+      color: #222;
+      letter-spacing: 2px;
+      font-size: 21px;
+      margin-bottom: 50px;
+    }
+
+    h2, h4, p{
+      font-family: 'Raleway'
+    }
+    
+    li{
+      font-size: 13.5px;
+    }
+    h4{
+      margin-top: 15px;
+      font-size: 13px;
+      color: #363636;
+      letter-spacing: 1px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+    p{
+      font-size: 13.5px;
+      color: #363636;
+      line-height: 2em;
+    }
+    .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+color: #555;
+cursor: default;
+background-color: #fff;
+border: none;
+border-bottom-color: transparent;
+}
+    ul.nav-tabs{
+        width: 140px;
+        margin-top: 20px;
+        border-radius: 4px;
+        border: 1px solid #ddd;
+        background-color: #fff;
+    }
+    ul.nav-tabs li{
+      text-transform: uppercase;
+      font-size: 12px;
+        margin: 0;
+        border-top: 1px solid #ddd;
+    }
+    ul.nav-tabs li:first-child{
+        border-top: none;
+    }
+    ul.nav-tabs li a{
+        margin: 0;
+        padding: 8px 16px;
+        border-radius: 0;
+    }
+    ul.nav-tabs li.active a, ul.nav-tabs li.active a:hover{
+        color: #222;
+        background: #fff;
+       
+    }
+    ul.nav-tabs li:first-child a{
+        border-radius: 4px 4px 0 0;
+    }
+    ul.nav-tabs li:last-child a{
+        border-radius: 0 0 4px 4px;
+    }
+    ul.nav-tabs.affix{
+        top: 250px; /* Set the top position of pinned element */
+    }
+    .sec{
+      height: 100%;
+      margin-top: 5%;
+      margin-bottom: 5%;
+    }
+    #section-1{
+    }
+    #the-affix{
+
+    }
+
+    #head-wrap-info{
+      background-image: url(/Users/jamespease/Desktop/nca/img/nca-2.jpg);
+      height: 600px;
+      background-size: cover;
+    }
+    #head-wrap-info h1{
+        font-family: 'Raleway';
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        color: #fff ;
+        position: relative;
+        top: 50%;
+        text-align: center;
+    }
+
+    .panel-title>a{
+      font-size: 15px;
+      font-weight: 300;
+    }
+    .panel-default>.panel-heading+.panel-collapse>.panel-body{
+      font-size: 13.5px;
+      color: #363636;
+      line-height: 2em;
+    }
+    .green{
+      color: #27ae60;
+      font-weight: bold;
+    }
+</style>
+    </head>
+    <body data-spy="scroll" data-target="#myScrollspy">
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+      <nav class="navbar navbar-fixed-top cbp-af-header-shrink">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+     <h2 class="brand">NCA<img id="logo-nca" src="img/logo.png"></h2>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About NCA <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-expanded="false">Info & Resources <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Current Members</a></li>
+        <li><a href="http://www.teamunify.com/Home.jsp?team=ncast">Team Store</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Try Out</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<header>
+  <div id="head-wrap-info">
+      <h1>Information</h1>
+  </div>
+</header>
+    <section id="the-affix">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9"></div>
+          <div class="col-md-3">
+              <div class="col-xs-3" id="myScrollspy">
+                <ul class="nav nav-tabs nav-stacked" id="myNav">
+                    <li class="active"><a href="#section-1">Team News</a></li>
+                    <li><a href="#section-2">Age Groups</a></li>
+                    <li><a href="#section-3">Boosters</a></li>
+                    <li><a href="#section-4">Records</a></li>
+                    <li><a href="#section-5">Alumni</a></li>
+                    <li><a href="#section-5">Swim Pool Locations</a></li>
+                </ul>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec" id="section-1">
+      <div class="container">
+        <div class="col-md-8">
+          <h2>Team News</h2>
+          <h4>Head Coach Jeff Pease Named USA Swimming Nationa Team Coach.</h4>
+          <p>Congratulations to Head Coach and Team Owner Jeff Pease on being named a USA Swimming National Team Coach. This is the 2nd year in a row and the 5th time Jeff has been named to the National Team Coaching Staff.<br> <a href="">Read More</a></p>
+          <h4>Kendyl Stewart Featured in Splash Magazine.</h4>
+          <p>October 21, 2014 <br><a href=""> Read More</a></p>
+        </div>
+      </div>
+    </section>
+<div class="container">  
+<hr>
+</div>
+
+    <section class="sec" id="section-2">
+      <div class="container">
+          <h2>Age Groups</h2>
+          
+        <div class="col-md-8">
+        <h4>Aqua Norte</h4>
+          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    10 & Under
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                  <span class="green">2 days/week:</span><br>
+Swimmers can perform 25 yards of each stroke. The focus is to build stroke technique and endurance and prepare swimmers for swim meets. Each workout contains technique drills & skill building, along with aerobic sets and speed work.
+<br>
+Tuesday + Thursday @ 5:00-6:00pm
+Tuesday + Thursday @ 6:00-7:00pm
+<br>
+<b>Coaches:</b> <a href="">Coach Katie</a>
+<br>
+<b>Equipment Needed:</b> Fins are required, coaches suggest a water bottle, team cap and mesh bag (go to team store)
+<br>
+<span class="green">3 days/week:</span>
+Swimmers can perform a legal 100IM. Swimmers in our 3 day a week program commit to 1-3 practice days a week. The focus is to build stroke technique and endurance and prepare swimmers for swim meets. Each workout contains technique drills & skill building, along with aerobic sets and speed work.
+<br>
+Monday + Wednesday + Friday @ 5:00-6:00pm
+Monday + Wednesday + Friday @ 6:00-7:00pm
+<br>
+<b>Coaches:</b> <a href="">Coach Katie</a>
+<br>
+<b>Equipment Needed:</b> Fins are required, coaches suggest a water bottle, team cap and mesh bag (go to team store)
+<br>
+<span class="green">5 days/week:</span>
+Swimmers can perform a legal 100IM. The 5 day a week has a minimum commitment requirement of 3 practice days a week and 1 swim meet a month. The focus is to continue building stroke technique and endurance along with preparation for official meets each month. Each workout contains technique drills & skill building, along with aerobic sets and speed work. Depending on ability, swimmers will compete in "C", "B" or "A" meets with the ultimate goal of qualifying for San Diego Junior Olympics and/or higher level meets.
+<br>
+Monday - Friday @ 4:30-5:30pm
+<br>
+Coach: <a href="">Coach Nate & Coach Rob</a>
+<br>
+Equipment Needed: Fins are required, coaches suggest a water bottle, team cap and mesh bag <a href="">(go to team store)</a>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingTwo">
+                <h4 class="panel-title">
+                  <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    11-12
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                <div class="panel-body">
+                  Our 11-12 groups participate in various stages of competitive swimming, from novice swimmers to Junior Olympic champions. This group has several programs within every workout, each catering to the athletes' needs. Swimmers are expected to attend a minimum of 3 workouts each week. In addition to all NCA team functions, swimmers are highly encouraged to attend all appropriate meets. A dryland component is incorporated twice a week.
+
+3 days/week:
+Monday, Wednesday, Friday @ 7:00-8:00pm
+
+Coach: Coach Amy
+
+5 days/week:
+Monday, Wednesday, Friday @ 5:30-7:00pm | Tuesday, Thursday @ 5:00-7:00pm
+
+Coaches: Coach Nate & Coach Mickey & Coach Rob
+
+Equipment Needed: Fins, snorkel and pullbuoy required, coaches suggest water bottle, team cap, and mesh bag (go to team store)
+
+* if you have old equipment, ie: Speedo Biosfuse Fins, you don't need to buy new ones, just when you are making a new purchase.
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingThree">
+                <h4 class="panel-title">
+                  <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    13-14
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                <div class="panel-body">
+                  The 13-14 program participates in various stages of competitive swimming, from novice level to Sectional qualifiers. This group has several programs within every workout, each catering to the athletes' needs, with a dryland component twice a week. Our staff carefully structure their practice group to maximize the potential of each swimmer in the water.Swimmers are required to attend a minimum of 3 workouts each week. In addition to all NCA team functions, swimmers are required to attend all appropriate meets.
+
+6 days/week:
+Monday, Wednesday, Friday @ 3:00-4:30pm | Tuesday, Thursday @ 3:00-5:00pm | Saturday TBD
+
+Coach: Coach Nate & Coach Rob
+
+Equipment Needed: Fins, snorkel, pullbuoy and full hand paddles required, coaches suggest water bottle, team cap, and mesh bag (go to team store)
+
+* if you have old equipment, ie: Speedo Biosfuse Fins, you don't need to buy new ones, just when you are making a new purchase.
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                    Senior III
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                  The Senior III group is designed to develop and maintain technical refinement in all four competitive strokes. Although competing in this group is not mandatory it is highly encouraged. Most swimmers in this program will represent their high school in competition. There is no minimum attendance requirement as many swimmers in this group are multi-sport athletes and/or have different extra-circular activities.
+
+6 days/week:
+Monday - Friday @ 7:00-8:30pm
+
+Coach: Coach Amy
+
+Equipment Needed:
+- Finis front mount snorkel/Speedo Equivalent
+- Speedo Power Paddles/Stroke Makers (smallest)
+- Z2 Zoomers
+- Mesh Bag
+- Optional: Kick Board
+(store page)
+
+* if you have old equipment, ie: Speedo Biosfuse Fins, you don't need to buy new ones, just when you are making a new purchase.
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                    Senior II
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                  The Senior II group is designed to help athletes mature physically and behaviourally as succesful student-athletes and ultimately collegiate swimminmers. Swimmers in this program are required to attend 5 out of 6 weekly workouts and compete regularly. Competition is based on ability and this group attends local, regional and national level competitions.
+
+6 days/week:
+Monday - Friday @ 7:00-8:30pm | Saturday TBD
+
+Coach: Coach Mickey
+
+Equipment Needed: Snorkel, Z2 Fins or Biofuse, Paddles, Pullbouy, mesh bag, team cap, water bottle (go to team store)
+
+* if you have old equipment, ie: Speedo Biosfuse Fins, you don't need to buy new ones, just when you are making a new purchase.
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="true" aria-controls="collapseOne">
+                    Senior I
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                  <b>Coaches:</b> <a href="">Coach Jeff</a> & <a href="">Coach Mickey</a><br>
+<b>Practice Schedule:</b> 3:00-5:30pm, 6 - 9 workouts per week for 90-180 minutes
+<br>
+<b>Qualifications:</b> Must have proven to the coaches a devotion to training and competition as well as a skill level appropriate to the current Senior group. Must be in the Pre Senior Program for a minimum of 3 months or have Coaches recommendation to be "fast tracked" to Senior group.
+<br>
+<b>Goals:</b> Senior swimmers must commit to a very demanding and intensified training program that includes morning workouts and a comprehensive dryland program. Senior swimmers prepare for local, regional, national and international competitions and ultimately the attainment of a college swimming opportunity.
+<br>
+<b>Equipment Needed:</b> Snorkel, Z2 Fins or Biofuse, Paddles, Pullbouy, mesh bag, team cap, water bottle <a href="">(go to team store)</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h4>Lajolla</h4>
+
+
+          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne-1" aria-expanded="true" aria-controls="collapseOne">
+                    10 & Under
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseOne-1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                  3 days/week:
+Swimmers can perform a legal 100IM. Swimmers in our 3 day a week program commit to 1-3 practice days a week. The focus is to build stroke technique and endurance and prepare swimmers for swim meets. Each workout contains technique drills & skill building, along with aerobic sets and speed work.
+
+Group 1
+Monday + Wednesday + Friday @ 3:30-4:30pm
+Tuesday + Thursday + Friday @ 3:30-4:30pm
+
+Group 2
+Monday + Wednesday + Friday @ 6:30-7:30pm
+Tuesday + Thursday + Friday @ 6:30-7:30pm
+
+5 days/week:
+Swimmers can perform a legal 100IM. The 5 day a week has a minimum commitment requirement of 3 practice days a week and 1 swim meet a month. The focus is to continue building stroke technique and endurance along with preparation for official meets each month. Each workout contains technique drills & skill building, along with aerobic sets and speed work. Depending on ability, swimmers will compete in "C", "B" or "A" meets with the ultimate goal of qualifying for San Diego Junior Olympics and/or higher level meets.
+
+Monday - Friday @ 5:30-6:30pm
+
+Coach: Coach Erin
+
+Equipment Needed: Fins are required, coaches suggest a water bottle, team cap and mesh bag (go to team store)
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingTwo">
+                <h4 class="panel-title">
+                  <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo-2" aria-expanded="false" aria-controls="collapseTwo">
+                    11-12
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseTwo-2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                <div class="panel-body">
+                  Our 11-12 groups participate in various stages of competitive swimming, from novice swimmers to Junior Olympic champions. This group has several programs within every workout, each catering to the athletes' needs. Swimmers are expected to attend a minimum of 3 workouts each week. In addition to all NCA team functions, swimmers are highly encouraged to attend all appropriate meets. A dryland component is incorporated twice a week.
+
+5 days/week:
+Monday - Friday 4:30 - 6:00pm
+
+Coaches: Coach Erin & Coach Kristyn & Coach Erika
+
+Equipment Needed: Fins, snorkel and pullbuoy required, coaches suggest water bottle, team cap, and mesh bag (go to team store)
+
+* if you have old equipment, ie: Speedo Biosfuse Fins, you don't need to buy new ones, just when you are making a new purchase.
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingThree">
+                <h4 class="panel-title">
+                  <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree-3" aria-expanded="false" aria-controls="collapseThree">
+                    12-13
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseThree-3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                <div class="panel-body">
+                  The 13-14 program participates in various stages of competitive swimming, from novice level to Sectional qualifiers. This group has several programs within every workout, each catering to the athletes' needs, with a dryland component twice a week. Our staff carefully structure their practice group to maximize the potential of each swimmer in the water.Swimmers are required to attend a minimum of 3 workouts each week. In addition to all NCA team functions, swimmers are required to attend all appropriate meets.
+
+6 days/week:
+Monday - Friday @ 6:00-7:30pm Saturday 6:45 - 9:00am
+
+Coach: Coach Michael & Coach Kristyn
+
+Equipment Needed: Fins, snorkel, pullbuoy and full hand paddles required, coaches suggest water bottle, team cap, and mesh bag (go to team store)
+
+* if you have old equipment, ie: Speedo Biosfuse Fins, you don't need to buy new ones, just when you are making a new purchase.
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne-4" aria-expanded="true" aria-controls="collapseOne">
+                    Senior III
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseOne-4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                  The Senior III group is designed to develop and maintain technical refinement in all four competitive strokes. Although competing in this group is not mandatory it is highly encouraged. Most swimmers in this program will represent their high school in competition. There is no minimum attendance requirement as many swimmers in this group are multi-sport athletes and/or have different extra-circular activities.
+
+6 days/week:
+Monday - Friday @ 6:30-8:00pm + dryland
+
+Coach: Coach Greg
+
+Equipment Needed:
+- Finis front mount snorkel/Speedo Equivalent
+- Speedo Power Paddles/Stroke Makers (smallest)
+- Z2 Zoomers
+- Mesh Bag
+- Optional: Kick Board
+(store page)
+
+* if you have old equipment, ie: Speedo Biosfuse Fins, you don't need to buy new ones, just when you are making a new purchase.
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne-5" aria-expanded="true" aria-controls="collapseOne">
+                    Senior II
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseOne-5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                  The Senior II group is designed to help athletes mature physically and behaviourally as succesful student-athletes and ultimately collegiate swimminmers. Swimmers in this program are required to attend 5 out of 6 weekly workouts and compete regularly. Competition is based on ability and this group attends local, regional and national level competitions.
+
+6 days/week:
+Monday - Friday @ 3:00-4:30pm + dryland OR 6:30-8:00pm + dryland | Saturday TBD
+
+Coach: Coach Greg
+
+Equipment Needed: Snorkel, Z2 Fins or Biofuse, Paddles, Pullbouy, mesh bag, team cap, water bottle (go to team store)
+
+* if you have old equipment, ie: Speedo Biosfuse Fins, you don't need to buy new ones, just when you are making a new purchase.
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne-6" aria-expanded="true" aria-controls="collapseOne">
+                    Senior I
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseOne-6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                  Coaches: Coach Jeff | Coach Michael
+Practice Schedule: 6 - 9 workouts per week for 90-180 minutes
+
+Qualifications: Must have proven to the coaches a devotion to training and competition as well as a skill level appropriate to the current Senior group. Must be in the Pre Senior Program for a minimum of 3 months or have Coaches recommendation to be "fast tracked" to Senior group.
+Goals: Senior swimmers must commit to a very demanding and intensified training program that includes morning workouts and a comprehensive dryland program. Senior swimmers prepare for local, regional, national and international competitions and ultimately the attainment of a college swimming opportunity.
+
+Equipment Needed: Snorkel, Z2 Fins or Biofuse, Paddles, Pullbouy, mesh bag, team cap, water bottle (go to team store)
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h4>Boys & Girls Club</h4>
+
+          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne-01" aria-expanded="true" aria-controls="collapseOne">
+                    10 & Under
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseOne-01" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                  3 days/week:
+Developmental (novice) swim team group. For swimmers progressing out of swim lessons to beginning swim team. Swimmers can perform 25 yards of each stroke. The focus is to build stroke technique and endurance and prepare swimmers for swim meets. Each workout contains techniques drills & skill building, along with aerobic sets and speed work. Commitment: 1-3 Days.
+
+Monday + Wednesday + Friday @ 5:00-6:00pm
+
+Coach: Coach Christy
+
+Equipment Needed:
+Goggles, swim caps, encouraged to get own fins
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingTwo">
+                <h4 class="panel-title">
+                  <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo-02" aria-expanded="false" aria-controls="collapseTwo">
+                    12 & Under
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseTwo-02" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                <div class="panel-body">
+                  3 days/week:
+Swimmers can perform 25 yards of each stroke. The focus is to build stroke technique and endurance and prepare swimmers for swim meets. Each workout contains techniques drills & skill building, along with aerobic sets and speed work. Commitment: 1-3 Days.
+
+Monday + Wednesday + Friday @ 6:00-7:00pm
+
+Coach: Coach Christy
+
+Equipment Needed:
+Goggles, swim caps, encouraged to get own fins
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<div class="container">  
+<hr>
+</div>
+
+    <section class="sec" id="section-3">
+    <div class="container">
+    <div class="col-md-8">
+      <h2>NCA Boosters</h2>
+      <p>The NCA Booster's is made up of North Coast Aquatics parents. The NCA Boosters Board is comprised of a President, Past President, Vice President, Treasurer, Secretary, five members at large and Head Coach Jeff Pease. The primary function of the NCA Boosters is to raise money to support swimmers and coaches. The fund-raising dollars go to support team travel and to provide for awards, championship t-shirts & caps, educational clinics & seminars, equipment, swim fee scholarships and team socials.</p>
+
+
+<p>Major events and activities that the NCA Boosters have sponsored are:
+Holiday party, JO t-shirts and caps, Annual Awards presentation (helps to subsidize), Relay event, Coaches education, Needs at sites - bins for equipment, pace clocks, kick boards, etc., Amazing Quest and other swimmer incentives, Swimmer of the Month awards</p>
+
+<p>The above activities and events are organized and hosted by NCA Boosters. They take a great deal of work and organization from not only the NCA Booster Board, but from all the parents and families who's swimmers are members
+
+Message from the North Coast Aquatics Boosters
+
+Did you know that Individual and Corporate Donations to the North Coast Aquatics Boosters are tax deductible?
+
+Below are examples of how NCA Team Members have taken advantage of this:</p>
+
+<p>
+  <ul>
+    <li>Donate on an individual basis.</li>
+    <li>Donate through your employer-sponsored United Way/CHAD campaign by designating the North Coast Aquatics Boosters as the "qualified" charitable organization.</li>
+    <li>Donate on an Individual basis (employee) and have donation matched by company (employer).</li>
+    <li>Solicit a donation from a company that sponsors youth sports organizations.</li>
+  </ul>
+</p>
+
+<p>The North Coast Aquatics Boosters' goal is to provide financial assistance through fund-raising to benefit team travel, the Kay Pentz scholarship fund for college-bound athletes, a scholarship program for swimmers who experience financial hardships, awards, and team equipment and functions. Want to know more? Please contact Mary Kay Barry at <a href="">mkbkmb@yahoo.com.</a></p>
+      </div>
+      </div>
+    </section>
+
+    <div class="container">  
+<hr>
+</div>
+
+    <section class="sec"  id="section-4">
+      <div class="container">
+        <div class="col-md-8">
+          <h2>Records</h2>
+          <h4>Coming soon</h4>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">  
+<hr>
+</div>
+
+    <section class="sec"  id="section-5">
+      <div class="container">
+        <div class="col-md-8">
+          <h2>Alumni</h2>
+          <h4>Coming soon</h4>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">  
+<hr>
+</div>
+    <section class="sec"  id="section-6">
+      <div class="container">
+        <div class="col-md-8">
+          <h2>Swim Team Locations</h2>
+          <h4>Section Under Maintenance</h4>
+        </div>
+      </div>
+    </section>
+
+    
+     <!-- Change the width and height values to suit you best -->
+  <footer>
+ 
+      <div class="footer-btm">
+           <span id="footer-tag">©2014. North Coast Aquatics</span>
+      </div>
+ 
+  </footer>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/vendor/cbpAnimatedHeader.js"></script>
+        <script src="js/vendor/classie.js"></script>
+        <script src="js/main.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $("#myNav").affix({
+                offset: { 
+                    top: 125 
+              }
+            });
+             
+        });
+        </script>
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+    </body>
+</html>
