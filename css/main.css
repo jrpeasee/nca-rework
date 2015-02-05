@@ -92,13 +92,13 @@ hr{
 }
 
 #item-0{
-	background-image: url(/Users/jamespease/Desktop/nca/img/head-img.jpg);
+	background-image: url(nca/img/head-img.jpg);
 }
 #item-1{
 	background-image: url(http://www.ncaswim.com/img/banners/site/img9.jpg);
 }
 #item-2{
-	background-image: url(/Users/jamespease/Desktop/nca/img/nca-3.jpg);
+	background-image: url(nca/img/nca-3.jpg);
 }
 
 .carousel .carousel-indicators li{
