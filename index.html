@@ -15,10 +15,10 @@
             body {
             }
         </style>
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="css/jPushMenu.css" />
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,200,600,800' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Raleway:400,700,300,600' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
@@ -26,60 +26,66 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-      <nav class="navbar navbar-fixed-top cbp-af-header">
+  <!-- Right menu element-->
+  <nav class="navbar navbar-default cbp-af-header" >
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
+      
+      <a class="navbar-brand" href="#"><span class="brand">NCA</span></a>
     </div>
-    <h2 class="brand">NCA<img id="logo-nca" src="img/logo.png"></h2>
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
+    <!-- Collect the nav links, forms, and other content for toggling -->  
       <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="home.html">Home</a></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-expanded="false">About NCA <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About<span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Philosophy</a></li>
-            <li><a href="#">Coaches</a></li>
-            <li class="divider"></li>
-            <li><a href="http://www.teamunify.com/Home.jsp?team=ncast">Separated link</a></li>
+            <li><a href="coaches.html">Coaches</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="records.html">Records</a></li>
+            <li><a href="alumni.html">Alumni</a></li>
           </ul>
         </li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Resources <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Info <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
+            <li><a href="info.html">General Info</a></li>
+            <li><a href="calendar.html">Team Calendar</a></li>
+            <li><a href="store.html">Team Store</a></li>
+            <li><a href="news.html">Team News</a></li>
+            <li><a href="boosters.html">Boosters</a></li>
+            <li><a href="photos.html">Photos</a></li>
+            <li><a href="resources.html">Helpful Resources</a></li>
           </ul>
         </li>
-        <li><a href="http://www.teamunify.com/Home.jsp?team=ncast">Current Members</a></li>
-        <li><a href="http://www.teamunify.com/Home.jsp?team=ncast">Team Store</a></li>
-        <li><a href="/Users/jamespease/Desktop/nca/contact.html">Contact Us</a></li>
-        <li><a href="/Users/jamespease/Desktop/nca/form.html" >Try Out</a></li>
+        <li><a href="http://www.teamunify.com/Home.jsp?team=ncast">Members</a></li>
+        <li><a href="tryout.html">Tryout</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="https://www.facebook.com/northcoastaquatics"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-      <div id="carousel" class="carousel slide" data-ride="carousel">
+
+
+
+<div id="carousel" class="carousel slide" data-ride="carousel">
+
   <!-- Indicators -->
   <ol class="carousel-indicators">
     <li data-target="#carousel" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel" data-slide-to="1"></li>
-    <li data-target="#carousel" data-slide-to="2"></li>
+    <li data-target="#carousel" data-slide-to="1" class=""></li>
+    <li data-target="#carousel" data-slide-to="2" class=""></li>
   </ol>
- 
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active" id="item-0">
+     <div class="header-video" style="width: 1231px; height: 607px;">
+    <img src="img/masthead.jpg" class="header-video--media" data-video-src="87701971" data-teaser-source="video/masthead-teaser" data-provider="Vimeo" data-video-width="500" data-video-height="281">
+    <a href="http://vimeo.com/87701971" class="video-trigger" id="video-trigger">Play video</a>
+  <video autoplay="true" loop="loop" muted="" id="teaser-video" class="teaser-video"><source src="http://d1n1m5poo9vydb.cloudfront.net/experience/fueledbywater/assets/videos/4_thumb_loop_mp454b19d922f05b_athem_loop_small.mp4" type="video/mp4"><source src="video/masthead-teaser.ogv" type="video/ogg"></video></div>
         <div class="item-wrap">
           <div class="carousel-caption" id="head-title">
               <h1>North Coast Aquatics</h1>
@@ -113,23 +119,23 @@
  
   <!-- Controls -->
 
-</div> <!-- Carousel -->
+</div>
 
       <section id="about" class="padding-80">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="center-header">
-                            <h3 class="center-heading">About Us</h3>
+                            <h3 class="center-heading">About</h3>
                             <span class="center-line"></span>
-                            <p>Tradition</p>
+                            <p>NCA</p>
                         </div>
                     </div>
                 </div><!--center heading row-->
               
                     <div class="col-md-8 col-md-offset-2">
                         <p class="about-p" style="visibility: visible; -webkit-animation: fadeInLeft;">
-                            North Coast Aquatics is the largest competitive swim team in San Diego County. Over the past 34 years NCA has helped place over 240 of its swimmers into major colleges across the country, and has been the highest achieving swim club in San Diego County for the last 2 decades. NCA swimmers form lifelong friendships with their teammates and competitors. We hope that your stay with our team, however short or long term, will be enjoyable and rewarding.<br><br><a href="">LEARN MORE</a>
+                            North Coast Aquatics is the largest competitive swim team in San Diego County. Over the past 34 years NCA has helped place over 240 of its swimmers into major colleges across the country, and has been the highest achieving swim club in San Diego County for the last 2 decades. NCA swimmers form lifelong friendships with their teammates and competitors. We hope that your stay with our team, however short or long term, will be enjoyable and rewarding.<br><br><a id="em" href="">LEARN MORE</a>
                         </p>
 
                     </div>
@@ -138,6 +144,9 @@
             </div><!--intro and skills-->
             
         </section>
+      <div class="container">
+        <hr>
+      </div>
       <section class="section testimonials">
         <div class="test-wrap">
             <div class="container">
@@ -164,9 +173,9 @@
                             <div class="content">
                                 <blockquote>
                                 <i class="fa fa-quote-left"></i>
-                                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint.</p>
+                                <p>Jeff's unwavering passion and commitment to his team and all of his swimmers is something that anyone can easily see and become inspired by. His honesty, knowledge, and simple wish to help anyone realize their full potential is why I have had success in swimming, and also why I am the person I am now. In my many years with Jeff, he has taught my teammates and myself everything there is to know about swimming and hard work, but also the valuable lessons to enjoy what you do and create lasting friendships. We sometimes jokingly call him "dad", but Jeff's guidance and constant support has made him much more than an incredible coach to us all.</p>
                                 </blockquote>
-                                <p class="source">Diana Luna<br><span class="title">Entrepreneur, Maecenas</span></p>
+                                <p class="source">Kendyl Stewart<br><span class="title">USC 5 Time All American</span></p>
                             </div><!--//content-->                         
                         </div><!--//item-->  
                         <div class="item active">
@@ -174,9 +183,9 @@
                             <div class="content">
                                 <blockquote>
                                 <i class="fa fa-quote-left"></i>
-                                <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere.</p>
+                                <p>Jeff Pease has been my coach since I was 12 years old and I immediately recognized his passion for what he did and his love for the sport. From that moment forward, Jeff became everything from my coach to my teacher to my role model to a father figure. He shaped me into the person I am today and I am so grateful for that...</p>
                                 </blockquote>
-                                <p class="source">Tony Lee<br><span class="title">CTO, Lorem Ipsum</span></p>
+                                <p class="source">Jessie Schmidt<br><span class="title">3-time Olympic Trials Qualifier</span></p>
                             </div><!--//content-->                         
                         </div><!--//item-->                                         
                     </div><!--//carousel-inner-->
@@ -185,88 +194,91 @@
             </div><!--//container-->
             </div>
         </section>
+<div class="container">
+        <hr>
+      </div>
 
-
-
-
-         <section class="section cta">
-            
-            <div class="container">
-                  <div class="center-header">
-                  <br><br>
-                            <h3 class="center-heading">Join The Tradition</h3>
-                            <span class="center-line"></span>
-                            <p>Check Out What NCA has to offer your child.</p>
-                  </div>
-                <div class="row">
-                  <div class="col-sm-4">
-                    <div class="media">
-                      <div class="row ">
-                                    <div class="media-img  pull-left  col-sm-5  col-md-4 ">
-                          <div class="img-overlay "> <a class="btn  btn-primary  animated fadeInUp " href="/en/about/" rel="bookmark">Open</a> </div>
-                          <img src="http://www.ncaswim.com/img/galleria/2014RSD/2014RSD(1).jpg" style="width: 130px; height: 130px" alt="About" width="150" height="150"> </div>
-                        <div class="media-body   col-sm-7 col-md-8  ">
-                          <h4 class="media-heading"> <a href="/about/">Coaches</a></h4>
-                          <p class="hidden-sm">Meet Our Elite Coaches</p>
-                        </div>
-                                  </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="media">
-                      <div class="row ">
-                                    <div class="media-img pull-left   col-sm-5 col-md-4 ">
-                          <div class="img-overlay  "> <a class="btn  btn-primary  animated fadeInUp needsclick" href="/en/portfolio/" rel="bookmark">Open</a> </div>
-                          <img src="http://www.ncaswim.com/img/galleria/2014RSD/2014RSD(11).jpg" style="width: 130px; height: 130px" alt="Web Design and Graphic Design Portfolio" width="150" height="150"> </div>
-                        <div class="media-body   col-sm-7  col-md-8 ">
-                          <h4 class="media-heading"> <a href="/en/portfolio/">Photos</a></h4>
-                          <p class="hidden-sm">Check out photos from our latest meets.</p>
-                        </div>
-                                  </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="media">
-                      <div class="row ">
-                                    <div class="media-img  pull-left   col-sm-5 col-md-4 ">
-                          <div class="img-overlay "> <a class="btn  btn-primary  animated fadeInUp needsclick" href="/en/contacts/" rel="bookmark">Open</a> </div>
-                          <img src="http://www.ncaswim.com/img/galleria/2014RSD/2014RSD(2).jpg" style="width: 130px; height: 130px" alt="Contacts for our agency in Empoli, Florence (Italy)" width="150" height="150"> </div>
-                        <div class="media-body  col-sm-7 col-md-8 ">
-                          <h4 class="media-heading"><a href="/en/contacts/">Try Out</a></h4>
-                          <p class="hidden-sm">Sign up for North Coast Aquatics Tryout.</p>
-                        </div>
-                                  </div>
-                    </div>
-                  </div>
-                </div>
+         <section class="section news padding-40">
+             <div class="center-header">
+                   <h3 class="center-heading">Recent</h3>
+                      <span class="center-line"></span>
+                      <p>News</p>
+              </div>
+            <div class="container-fluid">
+              <ul id="posts">
+                  <li class="clearfix">
+                      <div class="post-box">
+                        <a href="">
+                          <img  src="http://www.ncaswim.com/img/galleria/AwardsBanquet/awardsbanquet(3).jpeg">
+                          <span class="latest_post_overlay">
+                             <div class="plus">
+                         
+                               <p>Head Coach Jeff Pease Named USA Swimming Nationa Team Coach</p>
+                             </div>
+                          </span>
+                        </a>
+                      </div>
+                  </li>
+                  <li class="clearfix">
+                      <div class="post-box">
+                        <a href="">
+                          <img  src="http://www.swimmingworldmagazine.com/news/wp-content/uploads/2014/01/Stewart-Ke-2013-US-Nats-2687-e1407467758807-720x500.jpg">
+                          <span class="latest_post_overlay">
+                             <div class="plus">
+                             
+                               <p>Kendyl Stewart Featured in Splash Magazine.</p>
+                             </div>
+                          </span>
+                        </a>
+                      </div>
+                  </li>
+                  <li class="clearfix">
+                      <div class="post-box">
+                        <a href="">
+                          <img  src="http://upload.wikimedia.org/wikipedia/en/d/df/2014_Pan_Pacific_Swimming_Championships_logo.jpg">
+                          <span class="latest_post_overlay">
+                            <div class="plus">
+                              
+                               <p>Kendyl Stewart Featured in Splash Magazine.</p>
+                            </div>
+                          </span>
+                        </a>
+                      </div>
+                  </li>
+              </ul>
             </div>
-
+    
          </section>
+          
+          <section id="breakSection">
+          </section>
 
          <section id="affiliates">
              <div class="container">
-                 <div class="col-md-12">
-                     <ul>
-                         <li><a href=""><img src="http://www.ncaswim.com/img/sponsors/sklz.jpg"></a></li>
-                         <li><a href=""><img src="http://www.ncaswim.com/img/sponsors/speedo.jpg"></a></li>
-                         <li><a href=""><img src="http://www.ncaswim.com/img/sponsors/mrm.png" id="mrm"></a></li>
-                         <li><a href=""><img src="http://www.ncaswim.com/img/sponsors/exos.png" id="exos"></a></li>
-                         <li><a href=""><img src="http://www.ncaswim.com/img/sponsors/hammer.jpg" id="hammer"></a></li>
-                     </ul>
+             <div class="center-header">
+             <br>
+                   <h3 class="center-heading">Affiliates</h3>
+                      <span class="center-line"></span>
+              </div>
+                 <div class="col-md-12" id="logos">
+                        <i class="sprite sprite-SKLZ_opt"></i>
+                        <i class="sprite sprite-exos_opt"></i>
+                        <i class="sprite sprite-hammer_opt"></i>
+                        <i class="sprite sprite-imageedit_2_4584484230_opt"></i>
                  </div>
              </div>
          </section>
-
+       
 
         <footer id="footer">
             <div class="container">
 
                 <div class="row">
-                    <div class="col-md-3 col-xs-6 margin30">
+                    <div class="col-md-3 col-xs-6">
                         <div class="footer-col">
-                            <h3>About North Coast Aquatics</h3>
+                            <h2 id="title-logo">North Coast Aquatics</h2>
                             <p>
-                                North Coast Aquatics is the largest competitive swim team in San Diego County. Over the past 34 years NCA has helped place over 240 of its swimmers into major colleges across the country, and has been the highest achieving swim club in San Diego County for the last 2 decades.
+                                North Coast Aquatics is the largest competitive swim team in San Diego County.
                             </p>
                             <ul class="list-inline social-1">
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -280,57 +292,62 @@
                             <h3>Contact</h3>
 
                             <ul class="list-unstyled contact">
-                                <li><p><strong><i class="fa fa-map-marker"></i> Address:</strong> Carlsbad, CA 92011</p></li> 
-                                <li><p><strong><i class="fa fa-envelope"></i> Mail Us:</strong> <a href="#" id="em">info@ncaswim.com</a></p></li>
-                                <li> <p><strong><i class="fa fa-phone"></i> Phone:</strong> 760. 720. 1494</p></li>
-                                <li> <p><strong><i class="fa fa-print"></i> Fax</strong> 1800 2345 2132</p></li>
+                                <li><p><i class="fa fa-map-marker"></i> Address: Carlsbad, CA 92011</p></li> 
+                                <li><p><i class="fa fa-envelope"></i> Mail Us:<a href="#"> info@ncaswim.com</a></p></li>
+                                <li> <p><i class="fa fa-phone"></i> Phone: 760. 720. 1494</p></li>
+                                <li> <p><i class="fa fa-print"></i> Fax: 1800 2345 2132</p></li>
 
                             </ul>
                         </div>                        
                     </div><!--footer col-->
                      
-                    <div class="col-md-5 col-md-offset-1 col-xs-12 margin30">
+                    <div class="col-md-3 col-xs-12 margin30">
                         <div class="footer-col">
                             <h3>Send Us A Message</h3>
-                           
-                            <form role="form" class="subscribe-form">
-                                <div class="input-group">
-                              
-                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Full Name">
-                                </div>
-                                 <div class="input-group">
-                                   
-                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Email">
-                                </div>
-                                 <div class="input-group">
-                             
-                                  <textarea class="form-control" rows="3" placeholder="Enter Message"></textarea>
-                                </div>
-                                 <a href="#" class="btn btn-success more" role="button">Submit</a>
-                            </form>
+                           <ul class="list-unstyled contact">
+                                <li><p><a href="">Upcoming Meets</a</li> 
+                                <li><p><a href="#">Resources</a></p></li>
+                                <li> <p><a href="">Forms</a></li>
+                                <li> <p><a href="">Local Meet Info</a></li>
+                            </ul>
+                            
                         </div>                        
                     </div><!--footer col-->
 
+                    <div class="col-md-3 col-xs-12 margin30">
+                        <div class="footer-col">
+                            <h3>Recent Photos</h3>
+                            <ul class="list-inline f2-work">
+                                <li><a href="portfolio-single.html"><img src="http://www.ncaswim.com/img/gallery/nca24.jpg" class="img-responsive" alt=""></a></li>
+                                <li><a href="portfolio-single.html"><img src="http://www.ncaswim.com/img/gallery/nca18.jpg" class="img-responsive" alt=""></a></li>
+                                <li><a href="portfolio-single.html"><img src="http://www.ncaswim.com/img/gallery/nca10.jpg" class="img-responsive" alt=""></a></li>
+                                <li><a href="portfolio-single.html"><img src="http://www.ncaswim.com/img/gallery/nca12.jpg" class="img-responsive" alt=""></a></li>
+                                <li><a href="portfolio-single.html"><img src="http://www.ncaswim.com/img/gallery/nca1.jpg" class="img-responsive" alt=""></a></li>
+                                <li><a href="portfolio-single.html"><img src="http://www.ncaswim.com/img/gallery/nca13.jpg" class="img-responsive" alt=""></a></li>
+                              
+                            </ul>
+                        </div>
+                    </div><!-- end of footer img-group-->
                 </div>
-                <div class="row">
+            </div>
+                <div class="container-fluid" id="copyright">
                     <div class="col-md-12 text-center">
                         <div class="footer-btm">
                             <span>©2014. North Coast Aquatics</span>
                         </div>
                     </div>
                 </div>
-            </div>
+            
         </footer>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
-
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script src="js/vendor/masonry.pkgd.min.js"></script>
         <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/vendor/cbpAnimatedHeader.js"></script>
         <script src="js/vendor/classie.js"></script>
-        <script src="js/main.js"></script>
-        <script type="text/javascript">
+        <!--load jPushMenu, required-->
 
-        </script>
+<!--call jPushMenu, required-->
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
@@ -340,5 +357,12 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X');ga('send','pageview');
         </script>
+
+    <script type="text/javascript">
+
+
+
+    </script>
+
     </body>
 </html>
