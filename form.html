@@ -12,16 +12,21 @@
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <style>
-          #form-head-title{
+          .form-title{
+            margin-bottom: 5%;
+            font-weight: bold;
+          }
+          .form-title h2{
             text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #191919;
             font-weight: 600;
           }
-
         </style>
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,200,600,800' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Raleway:400,700,300,600' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
@@ -29,7 +34,7 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-      <nav class="navbar navbar-default cbp-af-header" >
+       <nav class="navbar navbar-default cbp-af-header" >
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -39,98 +44,101 @@
 
     <!-- Collect the nav links, forms, and other content for toggling -->  
       <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href="#">About</a></li>
+        <li class="active"><a href="home.html">Home</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="coaches.html">Coaches</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="records.html">Records</a></li>
+            <li><a href="alumni.html">Alumni</a></li>
+          </ul>
+        </li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Info <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Our Coaches</a></li>
-            <li><a href="#">Pool Locations</a></li>
-            <li><a href="#">Age Groups</a></li>
-            <li><a href="#">Team Calendar</a></li>
-            <li><a href="#">Team Store</a></li>
-            <li><a href="#">Times</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Boosters</a></li>
+            <li><a href="info.html">General Info</a></li>
+            <li><a href="calendar.html">Team Calendar</a></li>
+            <li><a href="store.html">Team Store</a></li>
+            <li><a href="news.html">Team News</a></li>
+            <li><a href="boosters.html">Boosters</a></li>
+            <li><a href="photos.html">Photos</a></li>
+            <li><a href="resources.html">Helpful Resources</a></li>
           </ul>
         </li>
-        <li><a href="#">Members</a></li>
-        <li><a href="#">Tryout</a></li>
-        <li><a class="bord-right" href="#">Contact</a></li>
-        <li><a class="bord-right" href="#"><i class="fa fa-facebook"></i></a></li>
-        <li><a class="bord-right" href="#"><i class="fa fa-instagram"></i></a></li>
+        <li><a href="http://www.teamunify.com/Home.jsp?team=ncast">Members</a></li>
+        <li><a href="tryout.html">Tryout</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="https://www.facebook.com/northcoastaquatics"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+
      <header id="form-head">
         <div id="form-wrap">
              <div id="form-head-title">
-                 <h1>Fill out the form below to request a tryout.</h1>
+                 <h1>Request Tryout Below.</h1>
              </div>
         </div>
      </header>
+
 <div class="container">
  
     
-<div class="row" id="form-info">
-  <div class="col-md-6">
-   <div class="form-title">
-    <h2>Thank-you for your interest in joining North Coast Aquatics.</h2>
-<p>This page will give you important information about some of our membership requirements so that you'll have a better idea of what's involved in joining our club.</p>
-    </h2>
-  </div>
-  </div>
-  <div class="col-md-6">
-    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingOne">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          TEAM TRYOUTS
-        </a>
-      </h4>
-    </div>
-    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-      <div class="panel-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+  <div class="row" id="form-info">
+      <div class="col-md-8">
+           <div class="form-title">
+            <h2>Thank-you for your interest in joining North Coast Aquatics.</h2>
+            <p>This page will give you important information about some of our membership requirements so that you'll have a better idea of what's involved in joining our club.</p>
+            </h2>
+           </div>
       </div>
-    </div>
   </div>
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingTwo">
-      <h4 class="panel-title">
-        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          MEMBERSHIP FEES
-        </a>
-      </h4>
-    </div>
-    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-      <div class="panel-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+  <div class="row">
+      <div class="col-md-6">
+      <h3>Membership Fees</h3>
+       <p>
+            Membership fees vary by groups and number of days of per week. Some additional discounts can be applied based on criteria that the tryout coordinator can discuss with you at the time of your tryout. The following are some approximate price ranges for our groups.
+  <ul>
+  <li><b>10&U: $110 - $173/month</b></li>
+  <li><b>11-12: $195/month</b></li>
+  <li><b>13-18: $120 - $204/month</b></li>
+  </ul>
+
+  More detailed information about our billing structure can be found HERE.
+       </p>
       </div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingThree">
-      <h4 class="panel-title">
-        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          TIME COMMITMENTS
-        </a>
-      </h4>
-    </div>
-    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-      <div class="panel-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+   
+      <div class="col-md-6">
+       <h3>Time Commitments</h3>
+      <p>
+          Being part of a competitive swim team, like any group or club, has some time commitment requirements. Times and days vary by group, starting with 2 days per week of 60 minute sessions for our younger athletes, going all the way up to 9 workouts per week for our senior athletes. Carlsbad Alga Norte schedules are here and La Jolla JCC Schedules are here.
+      </p>
       </div>
-    </div>
+  </div><!--end of row-->
+  <div class="row">
+      <div class="col-md-6">
+       <h3>Team Equipment</h3>
+        <p>
+            Being part of a team is a lot of fun. At North Coast, we pride ourselves on being a team and looking like a team. To do so, we have some outfiting and equipment requirements. These vary depending on which group you are in. More information on the requirements for each group can be found here.
+        </p>
+      </div>
+
+      <div class="col-md-6">
+       <h3>USA Swimming Membership</h3>
+        <p>
+           As a USA Swimming Club, NCA requires that all it's members join USA Swimming. Once you are part of NCA, we will provide you with more information to guide you as to how to applying for a USA Swimming membership.
+        </p>
+      </div>
   </div>
-</div>
-  </div>
+
 </div>
 
     <div class="typeform-widget" data-url="https://jamespease.typeform.com/to/Mch4bF" data-text="Tryout From" style="width:100%;height:500px;"></div>
 <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'widget.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
-<div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;">Powered by <a href="http://www.typeform.com/?utm_campaign=typeform_Mch4bF&amp;utm_source=website&amp;utm_medium=typeform&amp;utm_content=typeform-embedded&amp;utm_term=English" style="color: #999" target="_blank">Typeform</a></div>
+<div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"><a href="http://www.typeform.com/?utm_campaign=typeform_Mch4bF&amp;utm_source=website&amp;utm_medium=typeform&amp;utm_content=typeform-embedded&amp;utm_term=English" style="color: #999" target="_blank"></a></div>
   </div>
  <div class="row">
                     <div class="col-md-12 text-center">
