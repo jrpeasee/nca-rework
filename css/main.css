@@ -54,9 +54,9 @@ body{
 	font-family: 'Raleway';
 }
 p{
-      font-size: 13.5px;
+      font-size: 16px;
       color: #363636;
-      line-height: 2em;
+      line-height: 26px;
     }
 
 .navbar{
@@ -220,6 +220,10 @@ color: #fff;
 margin-top: 30px;
 margin-bottom: 20px;
 }
+a.btn-cta-primary:hover{
+	background-color: #27ae60 !important;
+	color: #fff !important;
+}
 button{
 	color: #fff !important;
 }
@@ -268,9 +272,10 @@ text-decoration: none;
   color:#222 !important;
   font-size: 36px;
   text-transform: uppercase;
-  font-weight: 300;
+  letter-spacing: 2px;
+  font-weight: 600;
   margin-top: 0;
-  margin-bottom: 60px;
+  line-height: 54px;
 }
 .testimonials .item .profile {
   position: absolute;
@@ -279,7 +284,7 @@ text-decoration: none;
 .testimonials .item .content {
   padding-left: 210px;
   padding-right: 210px;
-  height: 235px;
+  height: 260px;
 }
 .testimonials .item .content p {
 	color: #222;
@@ -424,15 +429,15 @@ background-color: #333;
 }
 .center-header{
     text-align: center;
-    margin-bottom: 40px;
+    margin-top: 1.286em;
+	margin-bottom: 1.286em; 
 }
 .center-heading{
 	letter-spacing: 2px;
     font-weight: 600;
     font-size: 34px;
-    line-height: 44px;
+    line-height: 54.4px;
     text-align: center;
-    margin-bottom: 5px;
     text-transform: uppercase;
     color:#292929;
 
@@ -451,7 +456,6 @@ span.center-line{
 }
 .about-p{
 	text-align: center;
-	line-height: 22px;
 
 }
 .cta{
@@ -715,6 +719,9 @@ footer span{
 
 /*NEWS SECTION ------------*/
 	.news{
+	}
+	#posts{
+		text-align: center;
 	}
 	#posts li{
 		display: inline-block ;
@@ -1002,7 +1009,7 @@ iframe {
 
 }
 .sprite {
-    background-image: url(/nca-rework/img/spritesheet.png);
+    background-image: url(nca-rework/img/spritesheet.png);
     background-repeat: no-repeat;
     display: block;
 }
@@ -1053,34 +1060,18 @@ iframe {
 
 
 
-#breakSection{
+.breakSection{
 	background-image: url(http://cdn.swimswam.com/wp-content/uploads/2013/06/Stewart_Kendyl-18-Kendyl-Stewart-North-Coast-Aqua-US-Stewart-DO8T6626-.jpg);
 	background-size: cover;
 	background-attachment: fixed;
-background-position: center center;
-background-repeat: no-repeat;
-height: 450px;
-position: relative;
-z-index: 10;
-background-repeat: no-repeat;
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 450px;
+	position: relative;
+	z-index: 10;
 }
 
 
-#breakSection:before {
-left: 50%;
-border: solid transparent;
-content: " ";
-height: 0;
-width: 0;
-position: absolute;
-pointer-events: none;
-border-color: transparent;
-border-color: rgba(136, 183, 213, 0);
-border-top-color: #fff;
-border-width: 20px;
-margin-left: -20px;
-z-index: 11;
-}
 
 
 
